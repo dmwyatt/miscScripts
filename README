@@ -1,0 +1,27 @@
+backupxtensions.py
+--------------------------------------
+Backup all files in with specified extensions in a directory, recursively.  Stores them in a bzip2 tar file.
+
+backupextensions.py DIR_WITH_FILES DESTINATION_DIR_AND_FILENAME COMMA_SEPERATED_LIST_OF_EXTENSIONS
+
+example:
+python backupxtensions.py /root/dir/of/videos /back_up_to_here/filename.tar.bz2 nfo,jpg,tbn
+
+
+delxtensions.py
+--------------------------------------
+Delete all files with the specified extension in a directory, recursively.
+
+delxtensions.py DIR_WITH_FILES COMMA_SEPERATED_LIST_OF_EXTENSIONS
+
+example:
+python delxtensions.py /root/dir/of/videos nfo,jpg,tbn
+
+removethumbs.py
+--------------------------------------
+Delete all the stupid thumbs.db files in a directory, recursively.
+
+removethumbs.py DIR_WITH_FILES
+
+example:
+python removethumbs.py /root/dir/of/videos
